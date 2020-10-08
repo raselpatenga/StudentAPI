@@ -4,7 +4,7 @@ using System.Linq;
 using StudentAPIV2.Data;
 using StudentAPIV2.Models;
 
-namespace StudentAPIV2.Services
+namespace StudentAPIV2.Survises
 {
     public class StudentSurvice
     {

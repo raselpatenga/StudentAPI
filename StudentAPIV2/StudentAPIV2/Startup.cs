@@ -29,6 +29,7 @@ namespace StudentAPIV2
         {
             services.AddControllers();
             services.AddDbContext<StudentContext>(cx => cx.UseSqlServer(Configuration.GetConnectionString("Connection")));
+            services.AddDbContext<TeacherContext>(cx => cx.UseSqlServer(Configuration.GetConnectionString("Connection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

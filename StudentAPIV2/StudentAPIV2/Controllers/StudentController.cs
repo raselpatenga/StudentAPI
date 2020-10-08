@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using StudentAPIV2.Services;
+using StudentAPIV2.Survises;
 using StudentAPIV2.Data;
 using StudentAPIV2.Models;
 
