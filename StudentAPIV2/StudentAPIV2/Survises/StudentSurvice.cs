@@ -69,6 +69,7 @@ namespace StudentAPIV2.Survises
                 throw ex;
             }
         }
+
         public string UpdateStudent(int id, Student model)
         {
             try
