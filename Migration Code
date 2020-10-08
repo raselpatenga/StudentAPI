@@ -1,0 +1,3 @@
+If is Single Context then Just type == add migration initial(Context name)
+Else if is Multiple Context then type == add migration initial_techer(Context name) -context TeacherContext(Context name).
+Then type == update-database(If is Single Context).If is Multiple Context then type == update-database -context TeacherContext(Context name)
