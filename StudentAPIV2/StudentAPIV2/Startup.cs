@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using StudentAPIV2.Data;
+using StudentAPIV2.Injector;
+using StudentAPIV2.Survises;
 
 namespace StudentAPIV2
 {
@@ -30,6 +32,7 @@ namespace StudentAPIV2
             services.AddControllers();
             services.AddDbContext<StudentContext>(cx => cx.UseSqlServer(Configuration.GetConnectionString("Connection")));
             services.AddDbContext<TeacherContext>(cx => cx.UseSqlServer(Configuration.GetConnectionString("Connection")));
+            services.AddTransient<IStudent, StudentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

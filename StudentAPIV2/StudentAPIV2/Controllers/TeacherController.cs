@@ -13,11 +13,11 @@ namespace StudentAPIV2.Controllers
     [ApiController]
     public class TeacherController : ControllerBase
     {
-        private TeacherSurvise teacherSurvise;
+        private TeacherService teacherSurvise;
 
         public TeacherController(TeacherContext context)
         {
-            teacherSurvise = new TeacherSurvise(context);
+            teacherSurvise = new TeacherService(context);
         }
 
         //Get api/teacher

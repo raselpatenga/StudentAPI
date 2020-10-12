@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace StudentAPIV2.Services
 {
-    public class TeacherSurvise
+    public class TeacherService
     {
         private TeacherContext _context;
 
-        public TeacherSurvise(TeacherContext context)
+        public TeacherService(TeacherContext context)
         {
             _context = context;
         }
